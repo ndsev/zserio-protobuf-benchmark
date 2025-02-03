@@ -67,7 +67,7 @@ jobs:
       shell: bash
 
     - name: Archive benchmarks log
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: benchmark-log-${{matrix.os}}
         path: build/benchmarks/*.log

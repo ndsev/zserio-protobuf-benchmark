@@ -39,7 +39,7 @@ jobs:
       run: scripts/benchmark.sh cpp-linux64-gcc cpp-linux64-clang
 
     - name: Archive benchmark log
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: benchmark-log-${{matrix.os}}
         path: build/benchmarks/*.log
